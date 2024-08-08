@@ -1,7 +1,7 @@
 # pantip_scraper
-# Created by DarkDrag0nite
+# Original version by DarkDrag0nite
 
-This is web scraper for pantip written in python2
+This is web scraper for pantip written in python2 https://github.com/Bankde/pantip_scraper.git
 
 # How to use
 
@@ -53,7 +53,7 @@ Extra Feature
 
 - no image being extracts (I can't decide how to save image properly and how to link that image to topic)
 - no poll information and topic with poll might be extracted incorrectly
-- no reply to comment yet (sry, I'm working on it)
+- no reply to comment yet (sry, I'm working on it) `Updated have reply comments `
 
 # Json Structure
 
@@ -75,12 +75,21 @@ JSON structure is as following:
 
 <br />
 
-== Comment ==
+= Comment ==
 - num
 - user_id
 - user_name
 - replyCount
-- replies (still working on it)
+- replies 
+    - num
+    - user_id
+    - user_name
+    - replyCount
+    - replies
+    - message
+    - emotions (as Emotion object) 
+    - likeCount
+    - dateTime
 - message
 - emotions (as Emotion object) 
 - likeCount
